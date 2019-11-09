@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/bookmarks" android:menuCategory="container" android:visible="true" android:title="Bookmarks..." android:enabled="true">
+        <menu>
+    		<item android:id="@+id/action_export_bookmarks" android:title="@string/action_export_bookmarks" android:orderInCategory="100" android:showAsAction="never"></item>
+    		<item android:id="@+id/action_import_bookamrks" android:title="@string/action_import_bookamrks" android:orderInCategory="100" android:showAsAction="never"></item>
+		</menu>
+	
+	</item>
+    <item android:id="@+id/action_blocking_loading" android:title="@string/action_blocking_loading" android:enabled="true" android:checkable="true" android:visible="true"></item>
+
+    
+    <item android:id="@+id/font_size" android:menuCategory="container" android:visible="true" android:title="Font size..." android:enabled="true">
+        <menu>
+		    <item android:id="@+id/font_tiny" android:checkable="true" android:visible="true" android:title="Tiny" android:enabled="true"></item>    
+		    <item android:id="@+id/font_small" android:checkable="true" android:visible="true" android:title="Small" android:enabled="true"></item>    
+		    <item android:id="@+id/font_medium" android:checkable="true" android:visible="true" android:title="Medium" android:enabled="true"></item>
+		    <item android:id="@+id/font_big" android:checkable="true" android:visible="true" android:title="Big" android:enabled="true"></item>
+		   	<item android:id="@+id/font_huge" android:checkable="true" android:visible="true" android:title="Huge" android:enabled="true"></item>
+		</menu>
+    </item>
+
+
+</menu>

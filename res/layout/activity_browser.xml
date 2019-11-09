@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".BrowserActivity" >
+
+    <GridLayout
+        android:id="@+id/browser_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="@integer/topBarColumns"
+        android:rowCount="1" >
+		
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:contentDescription="@string/newTab"
+            android:orientation="horizontal" >
+
+	        <ImageButton
+	            android:id="@+id/imageButton1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@android:drawable/ic_media_rew" />
+	
+	        <ImageButton
+	            android:id="@+id/imageButton2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@android:drawable/ic_media_ff" />
+
+	        <ImageButton
+	            android:id="@+id/imageButton7"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@android:drawable/ic_menu_rotate" />
+
+        </LinearLayout>
+		
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:contentDescription="@string/newTab"
+            android:orientation="horizontal" >
+	
+			<EditText
+			    android:id="@+id/editText1"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:ems="10"
+			    android:hint="url"
+			    android:inputType="textUri"
+			    android:lines="@integer/max_lines"
+			    android:singleLine="true" />      
+	    </LinearLayout>
+        
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_column="2"
+             android:contentDescription="@string/newTab"
+             android:gravity="right"
+             android:orientation="horizontal"
+             android:showDividers="middle" >
+
+             <ImageButton
+                 android:id="@+id/imageButton5"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+
+	      	<ImageButton
+	      	    android:id="@+id/imageButton3"
+	      	    android:layout_width="60dp"
+	      	    android:layout_height="48dp"
+	      	    android:adjustViewBounds="false"
+	      	    android:scaleType="fitCenter"
+	      	    android:src="@drawable/tab_plus" />
+	
+			<ImageButton
+			    android:id="@+id/imageButton4"
+			    android:layout_width="60dp"
+			    android:layout_height="48dp"
+			    android:scaleType="fitCenter"
+			    android:src="@drawable/tab_minus" />
+
+			<ImageButton
+			    android:id="@+id/imageButton6"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@android:drawable/ic_input_get" />
+
+		</LinearLayout>
+
+    </GridLayout>
+
+	<FrameLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="fill" >
+            
+	<WebView
+	    android:id="@+id/webView"
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="fill" />
+
+	</FrameLayout>
+
+</LinearLayout>  
+
+
